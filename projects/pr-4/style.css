@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	height: 100%;
+	width: 100%;
+	background-image: url("beach.jpg");
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	overflow: hidden;
+	
+}
+
+.run{
+	height: 200px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	
+}
+
+.plane{
+	width: 500px;
+	position: absolute;
+	bottom: 10px;
+	right: -280px;
+	animation: plan 4s linear infinite;
+	transform-origin: 100% 50%;
+}
+
+@keyframes plan{
+	100%{
+		transform: translateX(0px) translateY(0px) rotate(0deg);
+	}
+	30%{
+		transform: translateX(-500px) translateY(0px) rotate(0deg);
+	}
+	100%{
+		transform: translateX(-1500px) translateY(-150px) rotate(20deg);
+	}
+}
+
+
+
+
+
+
+
+
+
